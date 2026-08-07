@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connected Horsemanship with Amber Lynnae | Central Texas</title>
+<meta name="description" content="Learn to truly connect with your horse. Training in ground skills, liberty work, riding and trail preparedness in Central Texas, built on communication, consideration and kindness.">
+<link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/8bb720_0ec7807339e44c459086adb79700c258~mv2.jpeg/v1/fill/w_64,h_64,al_c,q_90/8bb720_0ec7807339e44c459086adb79700c258~mv2.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6EFE2;
+    --cream-card:#FBF7EE;
+    --bark:#3A2A1E;
+    --bark-soft:#54402F;
+    --taupe:#8B7862;
+    --rust:#B5541F;
+    --rust-dark:#8C3F16;
+    --gold:#C99A4E;
+    --line:#E2D3B8;
+    --mauve:#7C6B78;
+    --mauve-dark:#5F5060;
+    --mauve-text:#F3ECEE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--bark);
+    font-family:'Karla',sans-serif;
+    line-height:1.65;
+    font-size:17px;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    color:var(--bark);
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,239,226,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 32px;max-width:1080px;margin:0 auto;
+  }
+  .brand{
+    font-family:'Fraunces',serif;font-size:20px;font-weight:600;
+    text-decoration:none;color:var(--bark);
+    display:flex;align-items:center;gap:10px;
+  }
+  .brand img{width:32px;height:32px;border-radius:50%;object-fit:cover;}
+  .header-right{display:flex;align-items:center;gap:24px;font-size:14px;color:var(--bark-soft);}
+  .header-right a.phone{color:var(--rust);font-weight:600;text-decoration:none;white-space:nowrap;}
+  .cta-btn{
+    background:var(--mauve);color:#FFFFFF;
+    padding:10px 20px;border-radius:20px;
+    font-size:14px;font-weight:600;text-decoration:none;
+    white-space:nowrap;
+    transition:background 0.15s ease;
+  }
+  .cta-btn:hover{background:var(--rust-dark);}
+  @media (max-width:640px){
+    .header-right span.location{display:none;}
+  }
+
+  /* Hero: full-bleed photo with a bottom gradient scrim and centered copy, matching the live site */
+  body{background:var(--taupe-page,#C9A184);}
+  .hero{
+    position:relative;overflow:hidden;width:100%;
+    aspect-ratio:4/3;min-height:420px;
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .hero img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(to top, rgba(30,20,14,0.82) 0%, rgba(30,20,14,0.45) 34%, rgba(30,20,14,0) 62%);
+  }
+  .hero-copy{
+    position:relative;z-index:1;text-align:center;max-width:760px;
+    padding:0 32px 64px;
+  }
+  .hero-copy h1{color:#FBF7EE;font-size:clamp(38px,6vw,64px);line-height:1.08;}
+  .hero-copy p{color:#F0E6D6;font-size:17px;margin-top:18px;}
+  .hero-copy .actions{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+  .btn-primary{
+    background:var(--mauve);color:#FFFFFF;
+    padding:13px 30px;border-radius:24px;font-weight:600;font-size:15px;text-decoration:none;
+    box-shadow:0 2px 8px rgba(0,0,0,0.25);
+  }
+  .btn-primary:hover{background:var(--mauve-dark);}
+  .btn-secondary{
+    border:1px solid #F0E6D6;color:#FBF7EE;
+    padding:12px 28px;border-radius:24px;font-weight:600;font-size:15px;text-decoration:none;
+  }
+  @media (max-width:820px){
+    .hero{aspect-ratio:4/5;}
+  }
+
+  .section{padding:88px 0;position:relative;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head .eyebrow{color:var(--rust);}
+  .section-head h2{font-size:clamp(28px,3.5vw,38px);}
+  .section-head p{color:var(--bark-soft);margin-top:14px;font-size:17px;}
+
+  .trail-divider{display:flex;align-items:center;justify-content:center;padding:8px 0 0;}
+  .trail-divider svg{width:120px;height:24px;}
+
+  .reviews-band{background:var(--rust);overflow:hidden;padding:36px 0;}
+  .reviews-label{
+    text-align:center;color:#FBEADD;font-family:'Fraunces',serif;font-style:italic;
+    font-size:20px;margin-bottom:22px;
+  }
+  .reviews-track{
+    display:flex;gap:24px;width:max-content;
+    animation:reviews-scroll 46s linear infinite;
+  }
+  .reviews-band:hover .reviews-track{animation-play-state:paused;}
+  .review-card{
+    background:rgba(251,247,238,0.1);border:1px solid rgba(251,247,238,0.22);
+    border-radius:10px;padding:20px 24px;width:320px;flex:0 0 auto;
+  }
+  .review-card .stars{color:var(--gold);font-size:14px;letter-spacing:2px;}
+  .review-card p{color:#FBF2E7;font-size:15px;margin-top:10px;font-style:italic;}
+  .review-card .who{color:#F0D9BE;font-size:13px;margin-top:12px;font-style:normal;font-weight:600;}
+  @keyframes reviews-scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+
+  .services{display:flex;flex-direction:column;gap:56px;}
+  .service-row{
+    display:grid;grid-template-columns:0.85fr 1fr;gap:44px;align-items:center;
+  }
+  .service-row:nth-child(even){grid-template-columns:1fr 0.85fr;}
+  .service-row:nth-child(even) .service-media{order:2;}
+  .service-row:nth-child(even) .service-body{order:1;}
+  .service-media{border-radius:10px;overflow:hidden;}
+  .service-media img{width:100%;height:100%;object-fit:cover;display:block;}
+  .service-body h3{font-size:22px;}
+  .service-body p{color:var(--bark-soft);margin-top:10px;font-size:16px;}
+  .service-body ul{margin-top:12px;padding-left:0;list-style:none;}
+  .service-body li{
+    font-size:15px;color:var(--bark-soft);padding:4px 0 4px 18px;position:relative;
+  }
+  .service-body li::before{
+    content:"";position:absolute;left:0;top:12px;width:8px;height:1.5px;background:var(--rust);
+  }
+  @media (max-width:720px){
+    .service-row, .service-row:nth-child(even){grid-template-columns:1fr;}
+    .service-row:nth-child(even) .service-media{order:0;}
+    .service-row:nth-child(even) .service-body{order:0;}
+  }
+
+  .about-grid{
+    display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start;
+  }
+  @media (max-width:760px){ .about-grid{grid-template-columns:1fr;} }
+  .about-photo{border-radius:10px;overflow:hidden;aspect-ratio:3/4;}
+  .about-photo img{width:100%;height:100%;object-fit:cover;}
+  .about-grid .quote{
+    font-family:'Fraunces',serif;font-style:italic;font-size:22px;margin-bottom:20px;
+  }
+  .about-grid p{margin-bottom:14px;font-size:16.5px;}
+
+  .band-mauve{background:var(--mauve);color:var(--mauve-text);}
+  .band-mauve .wrap{padding-top:88px;padding-bottom:88px;}
+  .band-mauve h2, .band-mauve h3{color:#FFFFFF;}
+  .band-mauve .eyebrow{color:#E7DCE6;}
+  .band-mauve .quote{color:#F1E4EE;}
+  .band-mauve p{color:#E4D9E2;}
+
+  .contact{
+    background:var(--bark);color:#F1E7D6;border-radius:12px;
+    padding:0;overflow:hidden;
+  }
+  .contact .contact-photo{width:100%;aspect-ratio:21/9;}
+  .contact .contact-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%;}
+  .contact-row{display:grid;grid-template-columns:1fr 1fr;}
+  .contact-info{padding:48px 40px;}
+  .contact-info h2{color:#FBF7EE;}
+  .contact-info p.lead{color:#D8C6AE;margin-top:12px;font-size:16px;}
+  .contact-detail{margin-top:28px;font-size:15px;}
+  .contact-detail div{margin-bottom:10px;color:#EFE4D2;}
+  .contact-detail a{color:var(--gold);text-decoration:none;font-weight:600;}
+  .contact-form{padding:48px 40px;}
+  @media (max-width:820px){
+    .contact-row{grid-template-columns:1fr;}
+    .contact .contact-photo{aspect-ratio:3/2;}
+  }
+
+  form{display:flex;flex-direction:column;gap:14px;}
+  form input, form textarea{
+    background:rgba(251,247,238,0.06);
+    border:1px solid rgba(251,247,238,0.25);
+    color:#FBF7EE;padding:12px 14px;border-radius:4px;font-family:'Karla',sans-serif;font-size:15px;
+  }
+  form input::placeholder, form textarea::placeholder{color:#B5A588;}
+  form textarea{resize:vertical;min-height:96px;}
+  form button{
+    background:var(--mauve);color:#FFFFFF;border:none;
+    padding:13px 20px;border-radius:20px;font-weight:600;font-size:15px;cursor:pointer;
+    margin-top:4px;
+  }
+  form button:hover{background:var(--mauve-dark);}
+
+  footer{
+    border-top:1px solid var(--line);padding:36px 0;
+    font-size:14px;color:var(--taupe);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  }
+  footer a{color:var(--taupe);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#top" class="brand"><img src="https://static.wixstatic.com/media/8bb720_0ec7807339e44c459086adb79700c258~mv2.jpeg/v1/fill/w_100,h_100,al_c,q_90/8bb720_0ec7807339e44c459086adb79700c258~mv2.jpeg" alt="">Connected Horsemanship</a>
+    <div class="header-right">
+      <span class="location">Serving Williamson County, TX and surrounding areas</span>
+      <a class="phone" href="tel:+15128878078">(512) 887-8078</a>
+      <a class="cta-btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img src="hero.jpg" alt="Amber Lynnae with two horses in Central Texas">
+  <div class="hero-copy">
+    <h1>Connection made easy</h1>
+    <p>My passion is helping you gain understanding of your horses' behavior, while producing engagement, consistency and cooperation. Learning is easy, affordable and rewarding. Read on to learn about what training is offered, and click the "Get in Touch" link to schedule an introductory session.</p>
+    <div class="actions">
+      <a class="btn-primary" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="section" id="training">
+    <div class="section-head">
+      <div class="eyebrow">Training offered</div>
+      <h2>Wherever you are, we'll meet you there</h2>
+      <p>Whether it's riding lessons, ground work, liberty, or a specific problem to solve, you'll walk away with techniques to train your horse yourself. You'll see the benefit of your new skills from the very first session.</p>
+    </div>
+
+    <div class="services">
+      <div class="service-row">
+        <div class="service-media" style="aspect-ratio:620/595;"><img src="https://static.wixstatic.com/media/8bb720_a1be46be15bf42f68218e2d253089916~mv2.jpeg/v1/crop/x_50,y_205,w_620,h_595/fill/w_780,h_749,al_c,q_90/Untitled.jpeg" alt="Handling and management"></div>
+        <div class="service-body">
+          <h3>Handling and management</h3>
+          <p>For an everyday routine with your horses that runs smoother and feels more rewarding. If herd dynamics, feeding aggression, inconsistency or lack of structure are getting in the way, reach out so we can put a plan together.</p>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-media" style="aspect-ratio:460/520;"><img src="https://static.wixstatic.com/media/8bb720_4b6fd4b4bcdf4437a0040197ba74b8d9~mv2.jpeg/v1/fill/w_700,h_791,al_c,q_90/Untitled.jpeg" alt="Ground skills and liberty work"></div>
+        <div class="service-body">
+          <h3>Ground skills and liberty work</h3>
+          <p>Build real rapport and two way communication.</p>
+          <ul>
+            <li>Maintain gait and direction without micromanaging</li>
+            <li>Softness in the face and body</li>
+            <li>Drive and draw, on line and at liberty</li>
+            <li>Smooth upward and downward transitions</li>
+            <li>A whoa that actually yields results</li>
+            <li>Ground tie for grooming, saddling and mounting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-media" style="aspect-ratio:460/490;"><img src="https://static.wixstatic.com/media/8bb720_5c52683c6d4e4fed9ac8d0fcb2d4ea1d~mv2.jpeg/v1/crop/x_149,y_223,w_1142,h_1216/fill/w_700,h_746,al_c,q_90/Untitled.jpeg" alt="Riding with connection"></div>
+        <div class="service-body">
+          <h3>Riding with connection</h3>
+          <p>Put ground skills into practice. Rely on energy and aids to communicate under saddle, respectfully.</p>
+          <ul>
+            <li>Check in before you mount</li>
+            <li>Riding the whole horse, not just their face</li>
+            <li>Refined seat, hands, legs and energy</li>
+            <li>Turns on the front end and hindquarters, side passing, straight backing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-media" style="aspect-ratio:460/320;"><img src="https://static.wixstatic.com/media/8bb720_80b83ad801064ca3a7ddd71242861b37~mv2.jpeg/v1/fill/w_700,h_487,al_c,q_90/Untitled.jpeg" alt="Problem solving"></div>
+        <div class="service-body">
+          <h3>Problem solving</h3>
+          <p>Need short term lessons for a specific issue? Reach out for an evaluation and we'll build a plan around it.</p>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-media" style="aspect-ratio:460/420;"><img src="https://static.wixstatic.com/media/8bb720_43861ac63d7f4bb79a43cd55548e62f8~mv2.jpeg/v1/fill/w_700,h_639,al_c,q_90/Untitled.jpeg" alt="Trail and travel preparedness"></div>
+        <div class="service-body">
+          <h3>Trail and travel preparedness</h3>
+          <p>Build a confident trail partner.</p>
+          <ul>
+            <li>Keeping your horse focused on you</li>
+            <li>Obstacles and emergency stops</li>
+            <li>Building confidence and calming a nervous horse</li>
+            <li>Barn or buddy sour behavior</li>
+            <li>Trailer loading and safety</li>
+            <li>Hauling, including hooking up, driving and backing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <section class="band-mauve" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="https://static.wixstatic.com/media/8bb720_bd1e886106b545708cc66d5edfd545db~mv2.jpeg/v1/fill/w_600,h_800,al_c,q_90/8bb720_bd1e886106b545708cc66d5edfd545db~mv2.jpeg" alt="Amber Lynnae with a horse">
+        </div>
+        <div>
+          <div class="quote">Connection is key.</div>
+          <p>Amber's love for horses was immediate and indulged by her grandparents at a young age.</p>
+          <p>She spent her early years as a DIY horse owner and dedicated apprentice to a dirt-road breeding operation, riding and helping care for half-feral horses that Horse &amp; Rider Magazine couldn't have prepared her for. She continued with these barely handled horses throughout her adolescence, learning "old school" methods, largely through trial and error.</p>
+          <p>As a young adult, she was introduced to Natural Horsemanship and began studying and training with a Master Trainer in an NH program. This filled in gaps left by years of earlier training. Many lightbulbs went on, and Amber started to share her experiences.</p>
+          <p>She began helping rehab off-track thoroughbreds (OTTBs) for rehoming through a nonprofit. That work built a following, which led to forming and facilitating a large trail riding and event group as a Trail Coach. From there, she went on to become a Certified Riding Instructor with CHA, giving one-on-one arena and trail lessons, leading trail rides, and facilitating Youth Horse Camps, among other things.</p>
+          <p>Her training methods have evolved over the years into gentler techniques that bring about desired change while considering the whole horse.</p>
+          <p>Although teaching and sharing the life-changing work of Connected Horsemanship is her passion, she's spent significant time pursuing variety in other areas as well, with patterned speed events, competitive cow work, and a little jumping as the highlights. She is committed to continuing her education through many avenues: studying the principles of other like-minded trainers, LIMA, Attunement, as well as biomechanics, cow work training, liberty work clinics, obstacle course challenges, ranch work, and Stock Horse and Ranch Riding shows.</p>
+          <p>No matter the discipline or sport, there's always room for Connected Horsemanship!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-band">
+    <div class="reviews-label">Here's what people are saying</div>
+    <div class="reviews-track">
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Amber is committed, honest, patient and hard working, and most importantly, thinks first of the best for your horse!"</p><div class="who">— Kristy E.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"She is the kind of trainer who truly cares about both the horse and the person."</p><div class="who">— Brooke H.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"We saw and experienced improvement in the first 30 minutes."</p><div class="who">— Jeff Q.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"My confidence increased, and my horse now has an understanding of what I want to accomplish."</p><div class="who">— Sheri P.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"A horse I couldn't control on a lead rope is now cooperative with just visual and verbal cues."</p><div class="who">— Kristy E.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Her teaching style is both encouraging and thorough, which gave me the confidence to not only ride but also to bring my horses home and safely care for them on my own."</p><div class="who">— Brooke H.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Something I haven't encountered in many professionals is her openness in communicating when an issue falls outside her expertise. This reflects a high level of integrity."</p><div class="who">— Jeff Q.</div></div>
+      <!-- duplicated set so the marquee loops seamlessly -->
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Amber is committed, honest, patient and hard working, and most importantly, thinks first of the best for your horse!"</p><div class="who">— Kristy E.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"She is the kind of trainer who truly cares about both the horse and the person."</p><div class="who">— Brooke H.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"We saw and experienced improvement in the first 30 minutes."</p><div class="who">— Jeff Q.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"My confidence increased, and my horse now has an understanding of what I want to accomplish."</p><div class="who">— Sheri P.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"A horse I couldn't control on a lead rope is now cooperative with just visual and verbal cues."</p><div class="who">— Kristy E.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Her teaching style is both encouraging and thorough, which gave me the confidence to not only ride but also to bring my horses home and safely care for them on my own."</p><div class="who">— Brooke H.</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Something I haven't encountered in many professionals is her openness in communicating when an issue falls outside her expertise. This reflects a high level of integrity."</p><div class="who">— Jeff Q.</div></div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+  <div class="trail-divider">
+    <svg viewBox="0 0 120 24" fill="none"><path d="M2 12 Q 30 2, 60 12 T 118 12" stroke="#C99A4E" stroke-width="1.5" stroke-linecap="round"/><circle cx="2" cy="12" r="3" fill="#B5541F"/><circle cx="118" cy="12" r="3" fill="#B5541F"/></svg>
+  </div>
+
+  <section class="section" id="contact">
+    <div class="contact">
+      <div class="contact-photo">
+        <img src="https://static.wixstatic.com/media/ea8315c1a41841409b91e27f3c05e2ee.jpg/v1/fill/w_1470,h_500,al_c,q_90/ea8315c1a41841409b91e27f3c05e2ee.jpg" alt="Horse legs on the trail">
+      </div>
+      <div class="contact-row">
+        <div class="contact-info">
+          <div class="eyebrow" style="color:var(--gold);">Get in touch</div>
+          <h2>Let's build a plan for you and your horse</h2>
+          <p class="lead">Reach out with any questions, or tell me about your specific needs. I'd love to hear from you.</p>
+          <div class="contact-detail">
+            <div>Serving Williamson County, TX and surrounding areas</div>
+            <div><a href="tel:+15128878078">(512) 887-8078</a></div>
+            <div><a href="mailto:amberlynnae.horsemanship@gmail.com">amberlynnae.horsemanship@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form onsubmit="event.preventDefault(); this.reset(); alert('Thank you, we look forward to connecting!');">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Connected Horsemanship with Amber Lynnae</span>
+    <span>Serving Williamson County, TX and surrounding areas. <a href="tel:+15128878078">(512) 887-8078</a></span>
+  </footer>
+
+</div>
+
+</body>
+</html>
